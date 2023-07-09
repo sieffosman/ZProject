@@ -2,6 +2,13 @@
     font-family: 'DM Sans', sans-serif;
 }
 
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #27ae60;
+  --accent-color: #000000;
+}
+
+
 html, body {
     height: 100%;
     width: 100%;
@@ -17,7 +24,7 @@ html, body {
     width: 100%;
     min-height: 16.66%;
     height: fit-content;
-    background-color: rgb(44, 43, 43);
+    background-color: var(--primary-color);
     color: #FFFFFF;
     border: white solid 1px;
     flex-wrap: wrap;
@@ -220,7 +227,7 @@ a{
   
   .button {
     background-color: #333;
-    color: #fff;
+    color: var(--accent-color);
     padding: 10px 20px;
     text-decoration: none;
   }
@@ -237,17 +244,17 @@ a{
 
 /* Twitter */
 .fa-twitter {
-    background: rgb(44, 43, 43);
+    background: var(--primary-color);
     color: white;
   }
 
   .fa-linkedin{
-    background: rgb(44, 43, 43);
+    background: var(--primary-color);
     color: white;
   }
 
   .fa-medium{
-    background: rgb(44, 43, 43);
+    background: var(--primary-color);
     color: white;
   }
 
@@ -259,8 +266,8 @@ a{
   .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #90EE90;
-    color: rgb(44, 43, 43);
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
     border-radius: 20px;
     text-decoration: none;
     margin-left: 27px;
@@ -270,13 +277,14 @@ a{
   
   .button:hover {
     background-color: white;
+    color: var(--secondary-color);
   }
   
 
 .slogan{
     height: 556px;
     width: 100%;
-    border: #90EE90 solid 1px;
+    border: var(--secondary-color) solid 1px;
     background-image: url(assets/consulting.jpg);
     background-size: cover;
     background-position: left;
@@ -289,14 +297,14 @@ a{
 .slogan > h1 {
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
-    text-shadow: 0 0 5px rgb(44, 43, 43);
+    text-shadow: 0 0 5px var(--primary-color);
   }
 
 .bio{
     height: fit-content;
     width: 100%;
-    background-color:  rgb(44, 43, 43);
-    border: #90EE90 solid 1px;
+    background-color:  var(--primary-color);
+    border: var(--secondary-color) solid 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -329,8 +337,8 @@ a{
 .how-I-can-help-you{
     height: fit-content;
     width: 100%;
-    background-color:rgb(44, 43, 43);
-    border: #90EE90 solid 1px;
+    background-color:var(--primary-color);
+    border: var(--secondary-color) solid 1px;
 }  
 
 .help-heading{
@@ -349,8 +357,8 @@ a{
 .statement{
     height: fit-content;
     width: 100%;
-    background-color: rgb(44, 43, 43);
-    border: #90EE90 solid 1px;
+    background-color: var(--primary-color);
+    border: var(--secondary-color) solid 1px;
 }
 
 .statement-container{
@@ -374,8 +382,8 @@ a{
 .affiliations{
     height: fit-content;
     width: 100%;
-    background-color: rgb(44, 43, 43);
-    border: #90EE90 solid 1px;
+    background-color: var(--primary-color);
+    border: var(--secondary-color) solid 1px;
 }
 
 .affiliations-heading{
@@ -416,7 +424,7 @@ a{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(144, 238, 144, 0.7);
+    background: var(--secondary-color);
     border-radius: 47px;
     border: none;
   }
@@ -440,8 +448,8 @@ a{
 .testimonials{
     height: fit-content;
     width: 100%;
-    background-color: rgb(44, 43, 43);
-    border: #90EE90 solid 1px;
+    background-color: var(--primary-color);
+    border: var(--secondary-color) solid 1px;
 }
 
 .testimonials-heading{
@@ -465,8 +473,8 @@ a{
 .collaboration{
     height: fit-content;
     width: 100%;
-    background-color: rgb(44, 43, 43);
-    border: #90EE90 solid 1px;
+    background-color: var(--primary-color);
+    border: var(--secondary-color) solid 1px;
 }
 
 .collaboration-container{
@@ -495,8 +503,8 @@ a{
 .contact-section{
     height: fit-content;
     width: 100%;
-    background-color: rgb(44, 43, 43);
-    border: #90EE90 solid 1px;
+    background-color: var(--primary-color);
+    border: var(--secondary-color) solid 1px;
     display: flex;
 }
 
@@ -550,7 +558,7 @@ label {
   position: absolute;
   top: -25px;
   left: 0;
-  color: #999;
+  color: var(--accent-color);
   transition: all 0.2s ease;
   pointer-events: none;
   padding: 7% !important;
@@ -582,8 +590,8 @@ textarea:not(:placeholder-shown) + label {
 .footer{
     height: fit-content;
     width: 100%;
-    background-color: rgb(44, 43, 43);
-    border: #90EE90 solid 1px;
+    background-color: var(--primary-color);
+    border: var(--secondary-color) solid 1px;
     padding-left: 10px;
 
 }
