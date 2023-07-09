@@ -238,8 +238,8 @@ a{
 
   
 /* Add a hover effect if you want */
-.fa:hover {
-    opacity: 0.7;
+.fa:hover, .fa-medium:hover  {
+    opacity: 0.5 !important;
   }
 
 /* Twitter */
