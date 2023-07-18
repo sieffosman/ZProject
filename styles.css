@@ -22,11 +22,8 @@ html, body {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    min-height: 16.66%;
     height: fit-content;
-    background-color: var(--primary-color);
-    color: #FFFFFF;
-    border: white solid 1px;
+    background-color: white;
     flex-wrap: wrap;
     align-content: center;
 }
@@ -36,6 +33,10 @@ html, body {
 }
 .nav-bar{
   margin: 1% 0%;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navigation{
@@ -110,7 +111,7 @@ a{
 
 /* Use the below to edit rest of body's responsiveness.*/
 
-    .bio, .how-I-can-help-you, .statement, .affiliations, .testimonials, .collaboration, .contact-section{
+    .bio, .how-I-can-help-you, .statement, .collaboration, .contact-section{
       display: flex;
       flex-direction: column;
     }
@@ -149,15 +150,6 @@ a{
     .help-row > div {
       padding:30px;
       margin: 0px;
-    }
-
-    .testimonials-flex-container{
-      display: flex;
-      flex-direction: column;
-    }
-
-    .testimonials-column{
-      min-width: fit-content;
     }
 
     .collaboration-container{
@@ -256,17 +248,17 @@ a{
 /* Twitter */
 .fa-twitter {
     background: var(--primary-color);
-    color: white;
+    color: var(--accent-color);
   }
 
   .fa-linkedin{
     background: var(--primary-color);
-    color: white;
+    color: var(--accent-color);
   }
 
   .fa-medium{
     background: var(--primary-color);
-    color: white;
+    color: var(--accent-color);
   }
 
   .socials-contact-me{
@@ -277,8 +269,8 @@ a{
   .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--secondary-color);
-    color: var(--accent-color);
+    background-color: black;
+    color: white;
     border-radius: 20px;
     text-decoration: none;
     margin-left: 27px;
@@ -287,8 +279,8 @@ a{
   }
   
   .button:hover {
-    background-color: white;
-    color: var(--secondary-color);
+    background-color: black;
+    color: white;
   }
   
 
@@ -321,7 +313,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: var(--accent-color);
 }
 
 .bio-text-container-contact{
@@ -355,7 +347,7 @@ a{
 }  
 
 .help-heading{
-    color: white;
+    color: var(--accent-color);
     margin-left: 79px;
     margin-top: 30px;
 }
@@ -392,19 +384,6 @@ a{
     font-size: x-large;
 }
 
-.affiliations{
-    height: fit-content;
-    width: 100%;
-    background-color: var(--primary-color);
-    border: var(--secondary-color) solid 1px;
-}
-
-.affiliations-heading{
-    margin: 35px 83px;
-    display: flex;
-    justify-content: center;
-}
-
 .conveyor-belt {
     width: 100%;
     overflow: hidden;
@@ -421,7 +400,7 @@ a{
   }
   
   .logo-container img {
-    width: 100px; /* Adjust the size as needed */
+    width: 305px; /* Adjust the size as needed */
     height: auto;
     margin-right: 10px; /* Adjust the spacing between logos */
   }
@@ -458,30 +437,6 @@ a{
     right: 10px;
   }
 
-.testimonials{
-    height: fit-content;
-    width: 100%;
-    background-color: var(--primary-color);
-    border: var(--secondary-color) solid 1px;
-}
-
-.testimonials-heading{
-    margin-left: 58px;
-    margin-top: 52px;
-}
-
-.testimonials-flex-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70%;
-    padding-bottom: 5%;
-}
-
-.testimonials-column{
-    width: 30%;
-    padding: 5px 10px;
-}
 
 .collaboration{
     height: fit-content;
@@ -506,11 +461,26 @@ a{
     padding-left: 20px;
 }
 
-.engage-img{
-  width: 38%;
-  padding-left: 100px;
-  padding-bottom: 48px;
-  padding-top: 43px;
+.affiliations1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  font-size: x-large;
+}
+
+.affiliations-container-1, .affiliations-container-2{
+  max-width: 50%;
+}
+
+.worked-para{
+  padding-top: 40px;
+}
+
+.affiliations-image{
+  width: 75%;
+  height: auto;
 }
 
 .contact-section{
