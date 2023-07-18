@@ -505,11 +505,15 @@ a{
     padding-left: 15%;
 }
 
+.form-row{
+  display: flex;
+}
+
 .form-container{
     width: 50%;
     display: flex;
     align-items: center;
-    padding: 5%;
+    padding: 8%;
 }
 
 .form-container form{
@@ -544,7 +548,7 @@ label {
   color: var(--accent-color);
   transition: all 0.2s ease;
   pointer-events: none;
-  padding: 7% !important;
+  padding: 3% !important;
 }
 
 #firstName, #lastName {
