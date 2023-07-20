@@ -1,6 +1,7 @@
 *{
     font-family: 'DM Sans', sans-serif;
     font-size: x-large;
+    box-sizing: border-box;
 }
 
 :root {
@@ -55,7 +56,12 @@ html, body {
 a{
     text-decoration: none;
     color: var(--accent-color);
+    font-size: 0.65rem;
     
+}
+
+.navigation{
+  font-size: x-large;
 }
 
 .fa {
@@ -140,6 +146,7 @@ a{
       padding-left: 10%;
       padding-top: 5%;
       padding-right: 10%;
+  
     }
 
     .bio-button, .collaboration-button, #contact-button, .submit-button{
@@ -171,6 +178,10 @@ a{
     .collaboration-container{
       flex-direction: column;
       padding: 5%;
+    }
+
+    .contact-heading-container{
+      padding: 10px;
     }
 
     .contact-section-heading{
@@ -310,7 +321,7 @@ a{
 .slogan{
     height: 393px;
     width: 100%;
-    border: var(--secondary-color) solid 1px;
+    border-top: var(--secondary-color) solid 24px;
     background-image: url(assets/z-main-image.jpeg);
     background-size: cover;
     background-position: left;
@@ -332,7 +343,7 @@ a{
     height: fit-content;
     width: 100%;
     background-color:  var(--primary-color);
-    border: var(--secondary-color) solid 1px;
+    border-top: var(--secondary-color) solid 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -342,7 +353,8 @@ a{
 .bio-text-container-contact{
     display: flex;
     flex-direction: column;
-    margin: 203px;
+    margin: 123px;
+    width: 50%;
 }
 
 .bio-button{
@@ -350,7 +362,7 @@ a{
 }
 
 .headshot-image-container {
-    max-width: 400px; /* Set the desired maximum width */
+    max-width: 50%; /* Set the desired maximum width */
     text-align: center;
   }
   
@@ -365,14 +377,26 @@ a{
 .how-I-can-help-you{
     height: fit-content;
     width: 100%;
-    background-color:var(--primary-color);
-    border: var(--secondary-color) solid 1px;
+
+    border-top: var(--secondary-color) solid 24px;
 }  
+
+.worked-with-heading{
+  font-size: xxx-large;
+}
+
+.services-para{
+  background-color: var(--primary-color);
+    border-radius: 38px;
+    padding: 15px;
+    min-height: 250px;
+}
 
 .help-heading{
     color: var(--accent-color);
     margin-left: 79px;
     margin-top: 30px;
+    font-size: xxx-large;
 }
 
 .help-row{
@@ -383,7 +407,7 @@ a{
     
 }
 
-.help-row >div{
+.help-row > div{
   width: 33.33%;
   padding: 30px;
 }
@@ -392,7 +416,7 @@ a{
     height: fit-content;
     width: 100%;
     background-color: var(--primary-color);
-    border: var(--secondary-color) solid 1px;
+    border-top: var(--secondary-color) solid 24px;
 }
 
 .statement-container{
@@ -471,7 +495,7 @@ a{
     height: fit-content;
     width: 100%;
     background-color: var(--primary-color);
-    border: var(--secondary-color) solid 1px;
+    border-top: var(--secondary-color) solid 24px;
 }
 
 .collaboration-container{
@@ -510,13 +534,14 @@ a{
 .affiliations-image{
   width: 75%;
   height: auto;
+  margin-left: 100px;
 }
 
 .contact-section{
     height: fit-content;
     width: 100%;
     background-color: var(--primary-color);
-    border: var(--secondary-color) solid 1px;
+    border-top: var(--secondary-color) solid 24px;
     display: flex;
 }
 
@@ -542,12 +567,12 @@ a{
     width: 50%;
     display: flex;
     align-items: center;
-    padding: 8%;
 }
 
 .form-container form{
     display: flex;
     flex-direction: column;
+    padding-top: 156px;
 }
 
 form input, textarea, .submit-button {
@@ -607,7 +632,7 @@ textarea:not(:placeholder-shown) + label {
     height: fit-content;
     width: 100%;
     background-color: var(--primary-color);
-    border: var(--secondary-color) solid 1px;
+    border-top: var(--secondary-color) solid 24px;
     padding-left: 10px;
 }
 
