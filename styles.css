@@ -1,5 +1,6 @@
 *{
     font-family: 'DM Sans', sans-serif;
+    font-size: x-large;
 }
 
 :root {
@@ -68,7 +69,6 @@ a{
     /* sub header */
     .sub-header{
       height: fit-content;
-      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -83,8 +83,16 @@ a{
       display: none;
     }
 
+  .first-last-name{
+    display: flex;
+    flex-direction: column;
+  }
   
-  
+.name-column{
+  padding-top: 8px;
+    padding-bottom: 60px;
+}
+
     .mobile-nav {
       display: flex;
       align-items: center;
@@ -145,15 +153,23 @@ a{
       display: flex;
       flex-direction: column;
       margin: 5% !important;
+      align-items: center;
     }
 
     .help-row > div {
       padding:30px;
       margin: 0px;
+      width: 100% !important;
+      
     }
 
+.help-heading{
+  display: flex;
+  justify-content: center;
+}
+
     .collaboration-container{
-      flex-direction: column !important;
+      flex-direction: column;
       padding: 5%;
     }
 
@@ -164,16 +180,21 @@ a{
 
     .contact-section-heading-social{
       display: flex;
-      flex-direction: row !important;
+      flex-direction: row;
     }
 
-    .engage-img{
-      width: 100% !important;
-      height: auto;
-      padding-left: 0px !important;
-      padding-bottom: 0px !important;
-      padding-top: 0px !important;
+    .affiliations1{
+      display: flex;
+      flex-direction: column;
     }
+
+    .affiliations-container-2{
+      display: flex;
+      justify-content: center;
+    }
+
+    .affiliations-container-1, .affiliations-container-2 {
+      max-width: 100%;
   }
 
 
@@ -242,7 +263,7 @@ a{
   
 /* Add a hover effect if you want */
 .fa:hover, .fa-medium:hover  {
-    opacity: 0.5 !important;
+    opacity: 0.5;
   }
 
 /* Twitter */
@@ -285,7 +306,7 @@ a{
   
 
 .slogan{
-    height: 556px;
+    height: 393px;
     width: 100%;
     border: var(--secondary-color) solid 1px;
     background-image: url(assets/z-main-image.jpeg);
@@ -357,6 +378,12 @@ a{
     justify-content: space-around;
     margin-top: 111px;
     margin: 86px;
+    
+}
+
+.help-row >div{
+  width: 33.33%;
+  padding: 30px;
 }
 
 .statement{
@@ -492,17 +519,17 @@ a{
 }
 
 .contact-section-heading-social{
-  width: 50%;
-  width: 50%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row-reverse !important;
+  justify-content: flex-end;
+  align-items: stretch;
+  align-content: start;
+  flex-wrap: wrap;
 
 }
 
 .contact-section-heading{
-    padding-left: 15%;
+    padding-left: 25%;
 }
 
 .form-row{
@@ -522,7 +549,7 @@ a{
 }
 
 form input, textarea, .submit-button {
-margin:10px;
+margin:49px;
 }
 
 .form-element{
@@ -580,5 +607,6 @@ textarea:not(:placeholder-shown) + label {
     background-color: var(--primary-color);
     border: var(--secondary-color) solid 1px;
     padding-left: 10px;
-
 }
+
+  }
