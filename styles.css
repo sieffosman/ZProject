@@ -163,10 +163,10 @@ a{
       
     }
 
-.help-heading{
-  display: flex;
-  justify-content: center;
-}
+    .help-heading{
+      display: flex;
+      justify-content: center;
+   }
 
     .collaboration-container{
       flex-direction: column;
@@ -185,7 +185,7 @@ a{
 
     .affiliations1{
       display: flex;
-      flex-direction: column;
+      flex-direction: column !important;
     }
 
     .affiliations-container-2{
@@ -209,6 +209,8 @@ a{
     flex: 0 0 100%;
     margin-bottom: 10px;
   }
+
+}
   
   @media (min-width: 768px) {
     .form-element {
@@ -263,7 +265,7 @@ a{
   
 /* Add a hover effect if you want */
 .fa:hover, .fa-medium:hover  {
-    opacity: 0.5;
+    opacity: 0.5 !important;
   }
 
 /* Twitter */
@@ -609,4 +611,3 @@ textarea:not(:placeholder-shown) + label {
     padding-left: 10px;
 }
 
-  }
