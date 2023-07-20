@@ -22,7 +22,7 @@ html, body {
 .header{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     height: fit-content;
     background-color: white;
@@ -34,7 +34,7 @@ html, body {
   display: none;
 }
 .nav-bar{
-  margin: 1% 0%;
+  margin: 1% 2%;
   font-size: x-large;
   display: flex;
   align-items: center;
@@ -81,6 +81,12 @@ a{
       background: var(--primary-color);
       padding: 35px;
     }
+
+    .contact-heading-container{
+      padding: 10px;
+      width: 300px;
+    }
+
   
 
   @media (max-width: 850px) {
@@ -180,9 +186,6 @@ a{
       padding: 5%;
     }
 
-    .contact-heading-container{
-      padding: 10px;
-    }
 
     .contact-section-heading{
       margin-left: 5%;
@@ -543,20 +546,23 @@ a{
     background-color: var(--primary-color);
     border-top: var(--secondary-color) solid 24px;
     display: flex;
+    flex-direction: column;
 }
 
 .contact-section-heading-social{
   display: flex;
-  flex-direction: row-reverse !important;
-  justify-content: flex-end;
-  align-items: stretch;
+  flex-direction: row !important;
+  justify-content: space-around;
+  align-items: center;
   align-content: start;
   flex-wrap: wrap;
+  padding-top: 40px;
 
 }
 
 .contact-section-heading{
     padding-left: 25%;
+    font-size: xx-large;
 }
 
 .form-row{
@@ -634,5 +640,10 @@ textarea:not(:placeholder-shown) + label {
     background-color: var(--primary-color);
     border-top: var(--secondary-color) solid 24px;
     padding-left: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0% 4%;
+    justify-content: space-between;
+    align-items: center;
 }
 
