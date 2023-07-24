@@ -215,10 +215,17 @@ a{
     .affiliations-container-2{
       display: flex;
       justify-content: center;
+      min-width: 100%;
     }
 
     .affiliations-container-1, .affiliations-container-2 {
-      max-width: 100%;
+      max-width: 100% !important;
+  }
+
+  .affiliations-image{
+    margin-left: 0px !important;
+    padding-top: 50px;
+
   }
 
 
@@ -275,12 +282,7 @@ a{
     width: fit-content;
   }
   
-  .button {
-    background-color: #333;
-    color: var(--accent-color);
-    padding: 10px 20px;
-    text-decoration: none;
-  }
+ 
 
   .contact-me-button-container{
     padding-left: 34%;
@@ -327,8 +329,8 @@ a{
   }
   
   .button:hover {
-    background-color: black;
-    color: white;
+    background-color: white !important;
+    color: black !important;
   }
   
 
