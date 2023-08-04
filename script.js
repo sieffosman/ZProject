@@ -1,55 +1,33 @@
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const logoContainer = document.querySelector('.logo-container');
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const NavList = document.querySelector('.headerNavList');
+  const navLinkItems = Array.from(NavList.querySelectorAll('a'));
 
-const scrollStep = 200; // Adjust the value to control the scroll distance
-let scrollAmount = 0;
-let logoCount = logoContainer.childElementCount; // Number of logos
-let clickCount = 0;
+  hamburger.addEventListener('click', () => {
+    console.log('Hamburger clicked!');
+    NavList.classList.toggle('active');
+  });
 
-prevBtn.addEventListener('click', () => {
-  clickCount--;
-  scrollAmount += scrollStep;
-  logoContainer.style.transform = `translateX(${scrollAmount}px)`;
+  navLinkItems.forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      navLinkItems.forEach((item) => {
+        item.classList.remove('active');
+      });
+      link.classList.add('active');
+    });
+  });
 
-  if (clickCount < 0) {
-    clickCount = logoCount - 1;
-    scrollAmount = -(logoCount * scrollStep);
-    logoContainer.style.transform = `translateX(${scrollAmount}px)`;
-  }
+  // Close dropdown when clicking outside the nav-bar
+  document.addEventListener('click', (event) => {
+    const targetElement = event.target;
+    if (!targetElement.closest('.headerNavList') && !targetElement.closest('.hamburger')) {
+      NavList.classList.remove('active');
+    }
+  });
+
+  // Close dropdown on scroll
+  window.addEventListener('scroll', () => {
+    NavList.classList.remove('active');
+  });
 });
-
-nextBtn.addEventListener('click', () => {
-  clickCount++;
-  scrollAmount -= scrollStep;
-  logoContainer.style.transform = `translateX(${scrollAmount}px)`;
-
-  if (clickCount >= (logoCount-5)) {
-    clickCount = 0;
-    scrollAmount = 0;
-    logoContainer.style.transform = `translateX(${scrollAmount}px)`;
-  }
-});
-
-/*To make the site responsive*/
-// Get the necessary elements
-const mobileNav = document.querySelector('.mobile-nav');
-const navBar = document.querySelector('.nav-bar');
-const socialsContact = document.querySelector('.socials-contact-me');
-const websiteTitle = document.querySelector('.titleWebsite')
-const columnNav = document.querySelector('.column-nav');
-
-// Add event listener to the bars icon
-mobileNav.addEventListener('click', function () {
-  // Toggle the 'active' class on mobileNav
-  mobileNav.classList.toggle('active');
-  
-  // Toggle the display of navBar and socialsContact
-  navBar.style.display = navBar.style.display === 'none' ? 'flex' : 'none';
-  socialsContact.style.display = socialsContact.style.display === 'none' ? 'flex' : 'none';
-  websiteTitle.style.display =  websiteTitle.style.display === 'none' ? 'flex' : 'none';
-  
-  // Toggle the display of columnNav- CHECK... use columnNav to help create a column/list when screen reduced?
-  columnNav.style.display = columnNav.style.display === 'none' ? 'flex' : 'none';
-});
-
