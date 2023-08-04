@@ -1,33 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
   const NavList = document.querySelector('.headerNavList');
   const navLinkItems = Array.from(NavList.querySelectorAll('a'));
 
-  // Function to set the active link
-  function setActiveLink() {
-    const currentPage = window.location.pathname.split('/').pop();
-    navLinkItems.forEach((link) => {
-      const linkPage = link.href.split('/').pop();
-      if (currentPage === linkPage) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
-    });
-  }
-
-  // Set the active link on page load
-  setActiveLink();
-
-  // Close dropdown when clicking outside the nav-bar
-  document.addEventListener('click', (event) => {
-    const targetElement = event.target;
-    if (!targetElement.closest('.headerNavList') && !targetElement.closest('.hamburger')) {
-      NavList.classList.remove('active');
-    }
+  hamburger.addEventListener('click', () => {
+    NavList.classList.toggle('active');
   });
 
-  // Close dropdown on scroll
-  window.addEventListener('scroll', () => {
-    NavList.classList.remove('active');
+  navLinkItems.forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      NavList.classList.remove('active');
+
+      navLinkItems.forEach((item) => {
+        item.classList.remove('active');
+      });
+      link.classList.add('active');
+    });
   });
 });
