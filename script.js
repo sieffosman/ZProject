@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.querySelector('.hamburger');
   const NavList = document.querySelector('.headerNavList');
   const navLinkItems = Array.from(NavList.querySelectorAll('a'));
 
-  hamburger.addEventListener('click', () => {
-    console.log('Hamburger clicked!');
-    NavList.classList.toggle('active');
-  });
-
-  navLinkItems.forEach((link) => {
-    link.addEventListener('click', (event) => {
-      event.preventDefault();
-      navLinkItems.forEach((item) => {
-        item.classList.remove('active');
-      });
-      link.classList.add('active');
+  // Function to set the active link
+  function setActiveLink() {
+    const currentPage = window.location.pathname.split('/').pop();
+    navLinkItems.forEach((link) => {
+      const linkPage = link.href.split('/').pop();
+      if (currentPage === linkPage) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
     });
-  });
+  }
+
+  // Set the active link on page load
+  setActiveLink();
 
   // Close dropdown when clicking outside the nav-bar
   document.addEventListener('click', (event) => {

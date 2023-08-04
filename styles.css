@@ -45,6 +45,15 @@
   width: 213px;
 }
 
+.headerNavList li a.active {
+  border-bottom: 2px solid black;
+}
+
+.headerNavList li a:active {
+  /* temporary underline style while the link is being clicked */
+  text-decoration: underline;
+}
+
 .headerNavList > li {
   padding: 0px 25px;
 }
@@ -74,7 +83,7 @@
   width: 30px;
   height: 2px;
   margin: 6px 0;
-  background: var(--primary-color);
+  background: black;
 }
 
 /* media Q for hamburger/responsive nav bar*/
@@ -455,7 +464,7 @@ a{
   
 
 .slogan{
-    height: 393px;
+    height: 600px;
     width: 100%;
     border-top: var(--secondary-color) solid 24px;
     background-image: url(assets/z-main-image.jpeg);
