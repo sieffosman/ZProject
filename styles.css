@@ -10,18 +10,6 @@
 
 }
 
-:root {
-  /* Colors inspired by the flags of Somalia and the United Kingdom */
-  --somali-blue: #0072c6;      /* Deep blue for Somali flag */
-  --british-red: #c8102e;      /* Red for British flag */
-  --british-white: #ffffff;    /* White for British flag */
-  --british-blue: #012169;     /* Blue for British flag */
-  --british-yellow: #f1c21b;   /* Yellow for British flag */
-
-  /* Additional colors to complement the theme */
-  --dark-gray: #333333;        /* Dark gray for text and borders */
-  --light-gray: #f0f0f0;       /* Light gray for backgrounds */
-}
 
 .logoNavContainer {
   display: flex;
@@ -219,6 +207,7 @@ a{
       width: 300px;
     }
 
+
   
 
   @media (max-width: 850px) {
@@ -268,15 +257,8 @@ a{
       flex-direction: column;
       }
 
-      .headshot-image-container img{
-      display: flex !important;
-      height: 100% !important;
-      margin: 0px !important;
-      padding-top: 10% !important;
-      padding: 10% 10%;
-      align-content: center;
-      flex-wrap: wrap;
-        }
+     
+        
 
       .bio-text-container-contact{
       margin: 0px !important;
@@ -779,3 +761,19 @@ textarea:not(:placeholder-shown) + label {
 .footer-element > p{
   font-size: 0.45rem;
 }
+
+@media (max-width: 850px) {
+  /* TO CORRECT IPHONE IMAGE PROBLEM */
+  .headshot-image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding-top: 10%;
+    padding: 10% 10%;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 10% 0;
+    border-radius: 600px;
+  }
+}
+
