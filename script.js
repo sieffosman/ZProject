@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', () => {
       navLinks.forEach(link => link.classList.remove('active'));
       link.classList.add('active');
+      navList.classList.remove('active'); // Close the dropdown after clicking a link
     });
   });
 
@@ -20,4 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
   if (currentLink) {
     currentLink.classList.add('active');
   }
+
+  // Close dropdown when clicking outside the nav-bar
+  document.addEventListener('click', event => {
+    const targetElement = event.target;
+    if (!targetElement.closest('.headerNavList') && !targetElement.closest('.hamburger')) {
+      navList.classList.remove('active');
+    }
+  });
+
+  // Close dropdown on scroll
+  window.addEventListener('scroll', () => {
+    navList.classList.remove('active');
+  });
 });
