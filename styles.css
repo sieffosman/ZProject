@@ -223,7 +223,6 @@ a{
   
     .name-column{
     padding-top: 8px;
-    padding-bottom: 60px;
     }
 
     .mobile-nav {
@@ -484,7 +483,7 @@ a{
     display: flex;
     flex-direction: column;
     margin: 123px;
-    width: 50%;
+    width: 75%;
 }
 
 .bio-button{
@@ -492,7 +491,7 @@ a{
 }
 
 .headshot-image-container {
-    max-width: 50%; /* Set the desired maximum width */
+    max-width: 100%; 
     text-align: center;
   }
   
@@ -777,3 +776,25 @@ textarea:not(:placeholder-shown) + label {
   }
 }
 
+
+@media (max-width: 850px) {
+.form-container{
+  width: 100%;
+}
+
+  .form-container form {
+    padding-top: 100px;
+}
+}
+
+
+
+/*Contact Page Styles*/
+.contact-prompt-para{
+  padding: 10%;
+}
+
+.contact-page-heading{
+  padding-left: 8%;
+  font-size: xx-large;
+}
