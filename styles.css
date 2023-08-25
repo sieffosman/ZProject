@@ -30,7 +30,40 @@
 
 .BDIlogo{
   height: auto;
-  width: 213px;
+  width: 61px;
+}
+
+body div p.sub-header-p {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+.sub-header-content-container {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--primary-color);
+  padding: 0px;
+}
+
+    /* sub header */
+    .sub-header{
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: var(--primary-color);
+      padding: 30px;
+    }
+
+
+.find-out-more-button-container {
+  margin-top: -50px;
+  align-self: flex-end;
+  padding: 0% 12%;
+  margin-left: -264px;
+  padding-bottom: 4%;
 }
 
 
@@ -192,15 +225,7 @@ a{
     text-decoration: none;
   }
 
-    /* sub header */
-    .sub-header{
-      height: fit-content;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: var(--primary-color);
-      padding: 35px;
-    }
+
 
     .contact-heading-container{
       padding: 10px;
@@ -433,7 +458,7 @@ a{
     padding: 10px 20px;
     background-color: black;
     color: white;
-    border-radius: 20px;
+    border-radius: 9px;
     text-decoration: none;
     margin-left: 27px;
     margin-top: 16px;
@@ -451,7 +476,7 @@ a{
     height: 600px;
     width: 100%;
     border-top: var(--secondary-color) solid 24px;
-    background-image: url(assets/z-main-image.jpeg);
+    background-image: url(assets/z-main-image.jpg);
     background-size: cover;
     background-position: inherit;
     background-repeat: no-repeat;
