@@ -863,6 +863,30 @@ textarea:not(:placeholder-shown) + label {
 }
 }
 
+/* About Me */
+.about-me-bio{
+  display: flex;
+}
+
+.about-me-bio > img {
+  padding: 3%;
+  max-width: 50%;
+}
+
+.about-me-para-container{
+  padding: 2%;
+}
+
+p.first-about-me-para{
+  padding-top: 3%;
+}
+
+.about-me-para{
+  padding-top: 12%;
+
+}
+
+
 
 
 /*Contact Page Styles*/
