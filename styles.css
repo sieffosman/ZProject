@@ -933,6 +933,78 @@ p.first-about-me-para{
 max-width: 50%;
 }
 
+/*Services */
+
+
+
+.services-header-container {
+  background-color: var(--primary-color);
+  text-align: left; 
+  padding: 20px;
+}
+
+.services-header-container>h1{
+  font-size: xx-large;
+}
+
+.services-container {
+  margin: 2% auto;
+  max-width: 55%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8% 8%;
+  margin-bottom: 4%;
+}
+
+.box {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 13%;
+  border: var(--the-grey-color) solid 1p
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.box-header{
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .services-container {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding-bottom: 300px;
+  }
+
+  .box{
+    background-color: var(--primary-color);
+    padding: 65px;
+    border-radius: 0%;
+    border: var(--the-grey-color) solid 1p font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .services-container {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding-bottom: 500px;
+  }
+
+  .footer{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .first-box{
+    margin-top: 8%;
+  }
+}
+
+
 
 /*Contact Page Styles*/
 .contact-prompt-para{
