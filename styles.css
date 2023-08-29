@@ -824,20 +824,30 @@ textarea:not(:placeholder-shown) + label {
 }
 
 .footer{
-    height: fit-content;
-    width: 100%;
-    background-color: var(--primary-color);
-    border-top: var(--secondary-color) solid 24px;
-    padding-left: 10px;
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 0% 4%;
-    justify-content: space-between;
-    align-items: center;
+  height: fit-content;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-top: var(--secondary-color) solid 24px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0% 4%;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
 }
 
 .footer-element > p{
-  font-size: 0.45rem;
+  font-size: 1rem;
+}
+
+.footer-element-socials{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 850px) {
@@ -870,11 +880,12 @@ textarea:not(:placeholder-shown) + label {
 
 .about-me-bio > img {
   padding: 3%;
-  max-width: 50%;
+  max-width: 56%;
 }
 
 .about-me-para-container{
   padding: 2%;
+  max-width: 44%;
 }
 
 p.first-about-me-para{
@@ -886,7 +897,41 @@ p.first-about-me-para{
 
 }
 
+.about-Black-Dog {
+  display: flex;
+}
 
+.GIF-container, .GIF-text-container {
+  padding: 2%;
+}
+
+.GIF-text-container{
+  max-width: 44%;
+  padding-left: 4%;
+}
+
+.GIF-paras{
+  padding-top: 10%;
+}
+
+.GIF-container >img{
+  background-color: var(--primary-color);
+  border-radius: 9%;
+  padding: 2%;
+}
+
+#footer-Header{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.BDI-logo-footer-container{
+  max-width: 50%;
+}
+
+.BDI-logo-footer-container>img{
+max-width: 50%;
+}
 
 
 /*Contact Page Styles*/
