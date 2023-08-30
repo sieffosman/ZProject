@@ -933,6 +933,40 @@ p.first-about-me-para{
 max-width: 50%;
 }
 
+/*About Me Media Q's*/
+@media (max-width: 800px){
+
+.about-me-bio{
+  flex-direction: column;
+}
+
+.about-me-bio > img{
+  max-width: 100%;
+  padding: 1% 7%;
+  margin-top: 10%;
+}
+
+.about-me-para-container{
+  max-width: 100%;
+  padding: 3% 10%;
+}
+
+.about-Black-Dog{
+  flex-direction: column;
+}
+
+.GIF-container >img{
+  max-width: 100%;
+  padding: 1% 19%;
+}
+
+.GIF-text-container{
+  max-width: 100%;
+  padding: 3% 10%;
+}
+
+}
+
 /*Services */
 
 
