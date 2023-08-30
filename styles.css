@@ -1004,6 +1004,7 @@ max-width: 50%;
   font-weight: bold;
 }
 
+
 @media (max-width: 900px) {
   .services-container {
     grid-template-columns: 1fr;
@@ -1044,10 +1045,19 @@ max-width: 50%;
   display: flex;
 }
 .work-container > img {
-  max-width: 45%;
+  max-width: 37%;
   height: auto;
   padding: 4% 4%;
 }
+
+.work-container-background{
+  background-color: var(--primary-color);
+}
+
+.work-blank-space{
+  min-width: 20%;
+}
+
 
 .second-work-container{
   flex-direction: row-reverse;
