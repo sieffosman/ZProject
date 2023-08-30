@@ -1038,6 +1038,50 @@ max-width: 50%;
   }
 }
 
+/* Work */
+.work-container{
+  display: flex;
+}
+.work-container > img {
+  max-width: 45%;
+  height: auto;
+  padding: 4% 4%;
+}
+
+.second-work-container{
+  flex-direction: row-reverse;
+}
+
+.work-inner-text-button-container{
+  display: flex;
+    flex-direction: column;
+}
+
+.find-out-more-button-container{
+  margin: 2% 2%;
+}
+
+.work-sub-headers {
+  font-size: xx-large;
+  position: relative;
+  padding: 2% 4%;
+}
+
+.work-sub-headers::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Adjust the width of the border here */
+  height: 1px; /* Adjust the thickness of the border here */
+  background-image: linear-gradient(to right, transparent, black, transparent); /* Adjust gradient colors */
+}
+
+
+.work-paras{
+  padding: 1% 10%;
+}
+
 
 
 /*Contact Page Styles*/
