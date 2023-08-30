@@ -1015,7 +1015,8 @@ max-width: 50%;
     background-color: var(--primary-color);
     padding: 65px;
     border-radius: 0%;
-    border: var(--the-grey-color) solid 1p font-size: 18px;
+    border: var(--the-grey-color) solid 1p 
+    font-size: 18px;
     font-family: sans-serif;
     text-align: center;
   }
