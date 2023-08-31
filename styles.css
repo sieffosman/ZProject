@@ -487,20 +487,21 @@ a{
   }
   
 
-.slogan{
-  height: 600px;
-  width: 100%;
-  border-top: var(--secondary-color) solid 24px;
-  background-image: url(assets/z-main-image.jpeg);
-  background-size: cover;
-  background-position: left;
-  background-repeat: space;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
+  .slogan {
+    height: 600px;
+    width: 100%;
+    border-top: var(--secondary-color) solid 24px;
+    background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity */
+    background-image: url(assets/z-main-image.png); /* Background image */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }  
+  
+
 
 .slogan > h1 {
     text-align: center;
@@ -1099,6 +1100,17 @@ max-width: 50%;
 
 .work-paras{
   padding: 1% 10%;
+}
+
+@media (max-width: 750px) {
+.work-container{
+  flex-direction: column-reverse;
+}
+
+.work-container > img {
+    max-width: 100%;
+}
+
 }
 
 /*Projects*/
