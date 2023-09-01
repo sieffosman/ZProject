@@ -38,21 +38,63 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //END OF NAV BAR CODE
 
-
-const audio = document.getElementById("background-music");
+//music code
 const musicToggle = document.getElementById("music-toggle");
+const icon = document.getElementById("icon");
+let audio = document.getElementById("background-music"); // Assuming your audio element has this ID
+let musicPlaying = false;
 
-// Function to toggle audio playback
+// Function to toggle music and icon
 function toggleMusic() {
-    if (audio.paused) {
-        audio.play();
-    } else {
+    if (musicPlaying) {
+        // Pause music
         audio.pause();
+        icon.textContent = "volume_up"; // Change text content to "volume_up"
+    } else {
+        // Play music
+        audio.play();
+        icon.textContent = "volume_off"; // Change text content to "volume_off"
     }
+    musicPlaying = !musicPlaying;
 }
 
-// Event listener for the toggle button
+// Event listener for click on the button
 musicToggle.addEventListener("click", toggleMusic);
+
+
+//To drag music button
+let isDragging = false;
+let offsetX, offsetY;
+
+// Function to start dragging
+function startDragging(e) {
+    isDragging = true;
+    offsetX = e.clientX - musicToggle.getBoundingClientRect().left;
+    offsetY = e.clientY - musicToggle.getBoundingClientRect().top;
+    musicToggle.style.cursor = "grabbing"; // Change cursor to grabbing hand
+}
+
+// Function to stop dragging
+function stopDragging() {
+    isDragging = false;
+    musicToggle.style.cursor = "grab";
+}
+
+// Function to move the button while dragging
+function dragButton(e) {
+    if (!isDragging) return;
+    const x = e.clientX - offsetX;
+    const y = e.clientY - offsetY;
+    musicToggle.style.left = `${x}px`;
+    musicToggle.style.top = `${y}px`;
+}
+
+// Event listeners for mouse interactions
+musicToggle.addEventListener("mousedown", startDragging);
+window.addEventListener("mousemove", dragButton);
+window.addEventListener("mouseup", stopDragging);
+
+
 
 
 

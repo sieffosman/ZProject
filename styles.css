@@ -247,6 +247,13 @@ a{
   font-size: x-large;
 }
 
+
+.draggable {
+  position: absolute;
+  cursor: grab; 
+}
+
+
 .fa {
     padding: 22% 0%;
     font-size: 30px;
