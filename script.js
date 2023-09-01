@@ -36,16 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+//END OF NAV BAR CODE
 
-// JavaScript --> Stickhy behaviour 
-window.addEventListener("scroll", function() {
-  const header = document.querySelector(".header");
-  if (window.pageYOffset > 100) { // Adjust the pixel value as needed
-      header.classList.add("sticky");
-  } else {
-      header.classList.remove("sticky");
-  }
-});
 
 
 

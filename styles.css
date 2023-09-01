@@ -10,10 +10,6 @@
 
 }
 
-.headerNav{
-  display: flex;
-  justify-content: space-around;
-}
 
 
 .logoNavContainer {
@@ -31,8 +27,6 @@
   flex-direction: row;
   display: flex;
   align-items: flex-end;
-  padding: 0;
-  margin: 0;
 }
 
 .BDIlogo{
@@ -73,18 +67,8 @@ body div p.sub-header-p {
   padding-bottom: 4%;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
 
 
-.headerNavList li {
-  margin-right: 15px;
-}
 
 .headerNavList li a.active {
   border-bottom: 2px solid black;
@@ -127,7 +111,7 @@ body div p.sub-header-p {
   background: black;
 }
 
-/* media Q for hamburger/responsive nav bar*/
+
 @media only screen and (max-width: 768px) {
   .logoNavContainer {
     position: relative;
@@ -159,6 +143,8 @@ body div p.sub-header-p {
     opacity: 0.85;
     top: 70px;
     background-color: var(--primary-color);
+    border-bottom: var(--accent-color) solid 1px;
+    margin-top: 7%;
   }
 
   .headerNavList li a {
@@ -203,6 +189,29 @@ html, body {
     padding: 20px;
     z-index: 100;
 }
+
+@media (max-width: 767px) { /* Adjust the max-width as needed */
+  .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      background-color: var(--primary-color);
+      color: #fff;
+  }
+
+  .sub-header-content-container{
+    padding: 18% 9%;
+  }
+
+  .headerTitle > h1{
+    font-size: xx-large;
+    color: var(--accent-color);
+  }
+}
+
 
 .mobile-nav {
   display: none;
@@ -893,6 +902,11 @@ textarea:not(:placeholder-shown) + label {
 
 
 @media (max-width: 850px) {
+
+  form{
+    margin-left: 27%;
+  }
+
 .form-container{
   width: 100%;
 }
@@ -901,6 +915,32 @@ textarea:not(:placeholder-shown) + label {
     padding-top: 100px;
 }
 }
+
+@media (max-width: 992px) {
+  .contact-section{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  }
+
+
+@media (max-width: 632px) {
+
+  form{
+    margin-left: 18%;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  form{
+    margin-left: 5%;
+  }
+
+}
+
 
 /* About Me */
 .about-me-bio{
