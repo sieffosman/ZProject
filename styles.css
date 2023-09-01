@@ -520,8 +520,8 @@ a{
     height: 600px;
     width: 100%;
     border-top: var(--secondary-color) solid 24px;
-    background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity */
-    background-image: url(assets/z-main-image.png); /* Background image */
+    /*background-color: rgba(0, 0, 0, 0.5); Background color with opacity */
+    background-image: url(assets/z-main-image.png); 
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -933,7 +933,7 @@ textarea:not(:placeholder-shown) + label {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
 
   form{
     margin-left: 5%;

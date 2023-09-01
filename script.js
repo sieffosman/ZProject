@@ -39,6 +39,22 @@ document.addEventListener('DOMContentLoaded', () => {
 //END OF NAV BAR CODE
 
 
+const audio = document.getElementById("background-music");
+const musicToggle = document.getElementById("music-toggle");
+
+// Function to toggle audio playback
+function toggleMusic() {
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
+
+// Event listener for the toggle button
+musicToggle.addEventListener("click", toggleMusic);
+
+
 
 
 
