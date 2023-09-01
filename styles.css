@@ -10,6 +10,11 @@
 
 }
 
+.headerNav{
+  display: flex;
+  justify-content: space-around;
+}
+
 
 .logoNavContainer {
   display: flex;
@@ -26,6 +31,8 @@
   flex-direction: row;
   display: flex;
   align-items: flex-end;
+  padding: 0;
+  margin: 0;
 }
 
 .BDIlogo{
@@ -66,8 +73,18 @@ body div p.sub-header-p {
   padding-bottom: 4%;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 
 
+.headerNavList li {
+  margin-right: 15px;
+}
 
 .headerNavList li a.active {
   border-bottom: 2px solid black;
@@ -182,6 +199,9 @@ html, body {
     width: 100%;
     height: fit-content;
     background-color: white;
+    position: relative;
+    padding: 20px;
+    z-index: 100;
 }
 
 .mobile-nav {
