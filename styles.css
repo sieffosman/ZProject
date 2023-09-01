@@ -698,7 +698,7 @@ a{
   
   button {
     position: absolute;
-    top: 50%;
+    top: 19%;
     transform: translateY(-50%);
     background: var(--secondary-color);
     border-radius: 47px;
