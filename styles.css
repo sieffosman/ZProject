@@ -112,7 +112,8 @@ text-align: center;
 }
 
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 1100px) {
   .logoNavContainer {
     position: relative;
     padding: 0 20px;
@@ -992,6 +993,10 @@ textarea:not(:placeholder-shown) + label {
   max-width: 44%;
 }
 
+.about-me-para-container>h1{
+  text-align: center;
+}
+
 p.first-about-me-para{
   padding-top: 3%;
 }
@@ -1133,12 +1138,21 @@ max-width: 50%;
   .services-container {
     grid-template-columns: 1fr;
     max-width: 100%;
-    padding-bottom: 300px;
+    padding-bottom: 144px;
+  }
+
+  .services-header-container{
+    margin-top: 17%;
+    margin-bottom: 7%;
+  }
+
+  .services-header-container>h1{
+    text-align: center;
   }
 
   .box{
     background-color: var(--primary-color);
-    padding: 65px;
+    padding: 0 23px;
     border-radius: 0%;
     border: var(--the-grey-color) solid 1p 
     font-size: 18px;
@@ -1151,7 +1165,7 @@ max-width: 50%;
   .services-container {
     grid-template-columns: 1fr;
     max-width: 100%;
-    padding-bottom: 500px;
+    padding-bottom: 251px;
   }
 
   .footer{
@@ -1324,7 +1338,7 @@ max-width: 50%;
 }
 
 /*Iphone 12 MQs*/
-@media (max-width: 390px){
+@media (max-width: 600px){
 /*header*/
 .BDIlogo{
   padding-right: 11px;
@@ -1372,10 +1386,23 @@ max-width: 50%;
     padding: 0;
   }
 
+  /*about me*/
+  .about-me-bio{
+  padding-top: 29%;
+  }
 
   /*work*/
   .work-container-background-below-nav{
     padding-top: 29%;
   }
 
+    .services-header-container {
+      margin-top: 39%;
+
+}
+
+@media (max-width: 600px){
+  .sub-header-content-container{
+    margin-top: 28%; 
+  }
 }
