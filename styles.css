@@ -396,7 +396,6 @@ a{
     justify-content: center;
     width: fit-content;
     flex-direction: column;
-    margin: 29px 80px;
     }
 
     .collaboration-container{
@@ -912,7 +911,7 @@ textarea:not(:placeholder-shown) + label {
 }
 
 .footer-element > p{
-  font-size: 1rem;
+  font-size: 0.3rem;
 }
 
 .footer-element-socials{
@@ -1030,7 +1029,7 @@ p.first-about-me-para{
 }
 
 #footer-Header{
-  font-size: xx-large;
+  font-size: small;
   font-weight: bolder;
 }
 
@@ -1169,7 +1168,6 @@ max-width: 50%;
   }
 
   .footer{
-    flex-direction: column-reverse;
     align-items: center;
   }
 
@@ -1376,8 +1374,14 @@ max-width: 50%;
   }
 
   .contact-heading-container{
-      padding: 0%;
+    margin-top: 10%;
+    padding-bottom: 0;
     }
+
+    .contact-prompt-para {
+      margin-top: -4%;
+      padding: 0 20px;
+  }
 
   .contact-socials-links{
     margin-right: 8%;
@@ -1389,6 +1393,10 @@ max-width: 50%;
   /*about me*/
   .about-me-bio{
   padding-top: 29%;
+  }
+
+  .about-me-para{
+    padding-top: 0;
   }
 
   /*work*/
