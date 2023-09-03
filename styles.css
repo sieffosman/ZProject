@@ -43,9 +43,13 @@ body div p.sub-header-p {
   height: fit-content;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   background: var(--primary-color);
   padding: 0px;
+}
+
+b{
+  font-weight: 600;
 }
 
     /* sub header */
@@ -605,7 +609,7 @@ a{
 
   .helpHeader{
     font-size: xx-large;
-    font-weight: 100;
+    font-weight: bold;
     padding-bottom: 0.4%;
   }
 
@@ -685,6 +689,11 @@ a{
     padding-bottom: 6%;
 }
 
+.statement-container-element{
+  min-width: 100%;
+  text-align: center;
+}
+
 .statement-container > h4{
     font-size: larger;
     font-weight: normal;
@@ -692,6 +701,14 @@ a{
 
 .statement-container > h3{
     font-size: x-large;
+}
+
+.title-left-align .left-align {
+  text-align: left;
+}
+
+.testimonial-1{
+  font-weight: 600;
 }
 
 .conveyor-belt {
