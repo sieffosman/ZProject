@@ -1071,6 +1071,26 @@ max-width: 50%;
 
 }
 
+@media (max-width: 1028px) {
+
+  .about-Black-Dog{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .GIF-container{
+    padding: 3% 18%;
+  }
+
+  .GIF-text-container{
+    max-width: 100%;
+  }
+
+  .GIF-paras {
+    padding-top: 2%;
+}
+}
+
 /*Services */
 
 
