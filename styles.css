@@ -35,8 +35,8 @@
 }
 
 body div p.sub-header-p {
-  font-size: 1.8rem;
-  font-weight: normal;
+  font-size: 2.6rem;
+  font-weight: 900;
 }
 
 .sub-header-content-container {
@@ -55,7 +55,7 @@ body div p.sub-header-p {
       flex-direction: column;
       align-items: center;
       background: var(--primary-color);
-      padding: 30px;
+      padding: 1% 3%;
     }
 
 
@@ -90,10 +90,10 @@ body div p.sub-header-p {
 
 .headerNavList li a:hover,
 .headerNavList li a.active {
-  color: navy;
+  color: var(--accent-color);
   padding: 0;
-  /* border-right: 2px solid var(--british-red); */
   border-bottom: 2px solid black;
+  font-weight: 600;
 }
 
 .hamburger {
@@ -160,7 +160,7 @@ body div p.sub-header-p {
 
 /*THE ABOVE IS STYLES FOR NAV BAR*/
 *{
-    font-family: 'DM Sans', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
     font-size: x-large;
     box-sizing: border-box;
 }
@@ -1159,10 +1159,6 @@ max-width: 50%;
     flex-direction: column;
 }
 
-.find-out-more-button-container{
-  margin: 2% 2%;
-}
-
 .work-sub-headers {
   font-size: xx-large;
   position: relative;
@@ -1187,6 +1183,7 @@ max-width: 50%;
 @media (max-width: 750px) {
 .work-container{
   flex-direction: column-reverse;
+  padding-top: 29%;
 }
 
 .work-container > img {
