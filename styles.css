@@ -198,7 +198,7 @@ html, body {
       width: 100%;
       z-index: 100;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      background-color: var(--primary-color);
+      background-color: white;
       color: #fff;
   }
 
@@ -1216,7 +1216,6 @@ max-width: 50%;
 @media (max-width: 750px) {
 .work-container{
   flex-direction: column-reverse;
-  padding-top: 29%;
 }
 
 .work-container > img {
@@ -1326,6 +1325,19 @@ max-width: 50%;
 
 /*Iphone 12 MQs*/
 @media (max-width: 390px){
+/*header*/
+.BDIlogo{
+  padding-right: 11px;
+}
+
+.headerTitle>h1{
+  font-size: 20px;
+  margin-right: 2px;
+}
+
+
+/*main*/
+
   .sub-header-content-container{
     padding-left: 7%;
     margin-top: 34%;
@@ -1344,11 +1356,14 @@ max-width: 50%;
     max-width: 96%;
   }
 
-    .contact-heading-container{
+  .find-out-more-button-container{
+    text-align: end;
+    margin-right: 11%;
+  }
+
+  .contact-heading-container{
       padding: 0%;
     }
-
-
 
   .contact-socials-links{
     margin-right: 8%;
@@ -1357,5 +1372,10 @@ max-width: 50%;
     padding: 0;
   }
 
+
+  /*work*/
+  .work-container-background-below-nav{
+    padding-top: 29%;
+  }
 
 }
