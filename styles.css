@@ -1378,11 +1378,17 @@ max-width: 50%;
     padding-bottom: 0;
     }
 
+    .contact-page-heading{
+      padding-left: 0;
+    }
+
     .contact-prompt-para {
       margin-top: -4%;
       padding: 0 20px;
   }
-
+  .form-container form {
+    margin-top: -90px;
+}
   .contact-socials-links{
     margin-right: 8%;
   }
