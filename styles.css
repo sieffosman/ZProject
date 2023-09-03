@@ -64,11 +64,7 @@ b{
 
 
 .find-out-more-button-container {
-  margin-top: -50px;
-  align-self: flex-end;
-  padding: 0% 12%;
-  margin-left: -264px;
-  padding-bottom: 4%;
+text-align: center;
 }
 
 
@@ -642,7 +638,7 @@ a{
 
 .worked-with-heading{
   font-size: xx-large;
-    font-weight: 100;
+    font-weight: 900;
 }
 
 .services-para{
