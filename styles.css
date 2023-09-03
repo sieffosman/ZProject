@@ -1323,3 +1323,39 @@ max-width: 50%;
   padding-left: 8%;
   font-size: xx-large;
 }
+
+/*Iphone 12 MQs*/
+@media (max-width: 390px){
+  .sub-header-content-container{
+    padding-left: 7%;
+    margin-top: 34%;
+    margin-right: 3%;
+    margin-left: -1%;
+    padding: 0%;
+  }
+
+  #main-tagline {
+    font-size: 1.2rem;
+    margin: 0;
+    }
+
+  .slogan{
+    height: 41%;
+    max-width: 96%;
+  }
+
+    .contact-heading-container{
+      padding: 0%;
+    }
+
+
+
+  .contact-socials-links{
+    margin-right: 8%;
+  }
+  .contact-logo > img{
+    padding: 0;
+  }
+
+
+}
