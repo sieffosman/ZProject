@@ -122,6 +122,7 @@ text-align: center;
 
   .hamburger {
     display: block;
+    padding-right: 11px;
   }
 
   .headerNavList {
